@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(21, 54, 119), #4e085f);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  border-radius: 5px;
+  margin: 100px auto 20px ;
+  padding: 40px 30px 40px;
+  background-color: white;
+  position: relative;
+}
+.todo-app h2 {
+ 
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(234, 237, 238);
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.row button {
+  background: rgb(255, 100, 59);
+  color: white;
+  border: none;
+  padding: 16px 50px;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.row button:hover {
+  background-color: rgb(224, 49, 0);;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#list-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#list-container p {
+  padding: 12px 8px 12px 34px;
+  position: relative;
+  cursor: pointer;
+}
+#list-container p::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  top: 12px;
+  background-image: url(unchecked.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+#list-container p.checked {
+  text-decoration: line-through;
+}
+
+#list-container p.checked::before {
+  background-image: url(checked.png);
+}
+
+#list-container p span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+  height: 42.5px;
+  width: 42.5px;
+  line-height: 42.5px;
+  color: rgb(112, 106, 106);
+}
+
+#list-container p span:hover {
+  background-color: rgb(235, 234, 234);;
+}
+
+
+#clear-button {
+  background-color: rgb(55, 194, 199);
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 25px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+}
+#clear-button:hover {
+  background-color: rgb(27, 150, 154);
+}
+
